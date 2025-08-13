@@ -1,2 +1,2 @@
 config:
-    value: "quiz-service we are in prod environment"
+    value: "quiz-service, we are in prod environment"
