@@ -4,8 +4,12 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/quizdb
+  profiles:
+    active: dev
 server:
   port: 9092
+config:
+  import: configserver:http://localhost:9094
 
 eureka:
   client:
