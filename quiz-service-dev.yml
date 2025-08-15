@@ -1,2 +1,2 @@
 config:
-    value: "quiz-service, we are in development environment, We are going to change this value."
+    value: "quiz-service dev change"
