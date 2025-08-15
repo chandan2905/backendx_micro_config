@@ -1,13 +1,22 @@
 spring:
   application:
     name: quiz-service
+
   data:
     mongodb:
       uri: mongodb://localhost:27017/quizdb
+
 server:
   port: 9092
+
 config:
   import: configserver:http://localhost:9094
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 eureka:
   client:
